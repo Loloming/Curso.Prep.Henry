@@ -1,0 +1,48 @@
+Variable: una variable es un elemento que sirve para almacenar un valor.
+Por ejemplo: Hola = 'saludo'
+"Hola" es el nombre, seguido por el signo "=" y después la string 'saludo', la cual, en este caso, es el valor.
+Al leer "Hola = 'saludo'", básicamente entendemos que el valor de "Hola" es la string 'saludo'
+
+
+String: una string se usa para representar datos textuales.
+
+Función: una función se usa para automatizar un código y hacerlo más compacto.
+La estructura de una función es la siguiente:
+
+function NombreDeLaFunción(argumentos) {
+
+en este espacio va el código de la función
+
+}
+
+Primero se pone "function", se sigue con el nombre de la función y, entre paréntesis, los argumentos con los que trabaja la función. Después de eso, abrimos llaves "{}" y, lo que haya entre el espacio de las llaves va a ser el código.
+Para que la función retorne algo en la consola, se usa el comando "return", seguido de lo que queremos que retorne.
+
+Por ejemplo, si queremos hacer una función que retorne un saludo en la consola, tendríamos que hacer lo siguiente:
+
+function saludar(nombre) {
+	return '¡Hola, ' + nombre + '!';
+}
+
+Después del "return" hay una string, después el argumento y otra string más. Básicamente le estamos diciendo a la consola que retorne todo eso en una string. Por lo que, si invocamos la función escribiendo en la consola:
+
+saludar(Damian)
+
+
+Debería retornar "¡Hola, Damian!"
+
+Declaración "if": se usa como una condicional para correr código.
+Por ejemplo, si yo quiero hacer una función que me indique si el número que ingreso es par, ahí podemos usar "if".
+
+function esPar(num) {
+   if (num % 2 === 0)
+     return 'Es par'
+   else
+     return 'No es par'
+}
+
+La declaración "if" se usa como un "si pasa esto...". En este caso, if declara que si el resto de la división del número es 0, se retorne la string 'Es par' a la consola.
+Más abajo vemos que se usa la declaración "else", la cual se usa como "Si if no funciona...". En este caso, else declara que si el resto de la división no da 0, se retorne a la consola la string 'No es par'.
+
+
+Valores booleanos: Son los valores "true" y "false", que significan "verdadero" y "falso". En lenguaje binario vendrían a ser "1" para "true" y "0" para "false".
